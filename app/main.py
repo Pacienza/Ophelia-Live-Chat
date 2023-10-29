@@ -1,5 +1,28 @@
+import importlib
+import sys
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send
+
+def check_and_install_library(library_name, install_command):
+    try:
+        importlib.import_module(library_name)
+        print(f"{library_name} está instalada.")
+    except ImportError:
+        print(f"{library_name} não está instalada. Instalando...")
+        import subprocess
+        subprocess.check_call([sys.executable, "-m", "pip", "install", install_command])
+        print(f"{library_name} foi instalada com sucesso.")
+
+# Bibliotecas necessárias para execução do chat
+libraries = {
+    "Flask": "flask",
+    "Socketio": "python-socketio",
+    "Simple Websocket": "simple-websocket"
+}
+
+for library_name, install_command in libraries.items():
+    check_and_install_library(library_name, install_command)
+
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "VLinfo_LuVi0801"

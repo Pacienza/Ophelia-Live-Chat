@@ -13,36 +13,26 @@ body {
 
 
 #barraTopo {
-    /* background-color: #c008b1; */
-    /* color: #4b0045; */
-    background-color: rgb(0, 0, 0);
-    color: #00d620;
-    border-bottom: 2px solid #00d620;
+    color: #903eff;
+    background-color: #b57aef;
+    border-bottom: 2px solid #903eff;
     height: 80px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    font-style: italic;
-}
-
-#barraTopo b{
-    margin: 0px;
-    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
     
-    font-style: normal;
 }
-
 
 #chat {
-    background-color: #000000;
+    background-image: url("../images/background.png");
     height: calc(100vh - 150px);
     overflow-y: scroll;
 }
 
 #chat h6{
     padding: 10px;
-    border-bottom:1px solid #00480b;
-    color: #1702d0;
+    border-bottom:1px solid #903eff;
+    color: #6800a5;
     text-align: center;
     margin: 0px 0px 5px 0px;
 
@@ -51,9 +41,10 @@ body {
 
 #chat p{
     padding: 10px;
-    color: #00d620;
+    color: #000000;
     text-align: left;
-    border-bottom:1px solid #00480b;
+    background-color: #6800a536;
+    border:1px solid #bd00d69d;
     border-radius: 8px;
     margin: 10px 0;
 }
@@ -65,7 +56,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #151515;
+    background-color: #903eef;
     padding: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -88,9 +79,9 @@ body {
 
 #userInputs button {
     padding: 10px 20px;
-    background-color: #1702d0;
-    color: #00d620;
-    border: 1px solid #00d620;
+    background-color: #b6b6b6;
+    color: #000000;
+    border: 1px solid #444444;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
